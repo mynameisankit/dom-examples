@@ -131,6 +131,5 @@ class PixelArtGrid {
     }
 };
 
-const BODY = document.getElementsByTagName('grid');
 const container = document.querySelector('.pixel-art-grid');
 container.replaceChildren(new PixelArtGrid(10, 10).CONTAINER);
