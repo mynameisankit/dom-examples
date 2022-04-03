@@ -95,6 +95,12 @@ class ColorSpotter {
             col: getRandomNumber(this.size)
         };
 
+        const score = document.createElement('div');
+        score.appendChild(document.createElement('p'));
+        score.children[0].innerHTML = `Score : ${this.score}`;
+        score.children[0].style.textAlign = 'center';
+        fragment.appendChild(score);
+
         for (let i = 0; i < this.size; i++) {
             const currRow = document.createElement('row');
             currRow.style.display = 'flex';
